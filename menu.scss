@@ -1,0 +1,29 @@
+.header__menu{
+    display: flex;
+        flex-direction: column;
+        margin: 0 99px 0 0;
+        & .menu__list{
+            padding-left: 0.6rem;
+            & .menu__item{
+                display: flex;
+                 font-family: "Open Sans", sans-serif;
+                height: 45px;
+                 width: 225px;
+                 padding-top: 10%;
+                 padding-left: 10%;
+                &__link{
+                    font-style: normal;
+                    font-weight: normal;
+                   font-size: 14px;
+                   line-height: 19px;
+                   color: #FFFFFF;
+                   padding-left: 11px;
+                   padding-bottom: 29px;
+                   text-decoration: none;
+                   &:hover{
+                    color:  #43E8FF;
+                   }
+                }
+            }
+        }
+}

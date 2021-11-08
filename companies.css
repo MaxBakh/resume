@@ -1,0 +1,142 @@
+#search-button {
+  width: 112px;
+  height: 36px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+
+#search-input {
+  width: 465px;
+  height: 36px;
+  background: #3E4459;
+  border-radius: 5px;
+}
+
+#search-input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #C4C4C4;
+  padding: 8px 0 9px 16px;
+}
+
+#search-input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #C4C4C4;
+  padding: 8px 0 9px 16px;
+}
+
+#search-input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #C4C4C4;
+  padding: 8px 0 9px 16px;
+}
+
+#search-input::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #C4C4C4;
+  padding: 8px 0 9px 16px;
+}
+
+#filter {
+  border: none;
+  background: #3E4459;
+  width: 13px;
+  height: 16px;
+  position: absolute;
+  left: 75%;
+  right: 23.26%;
+  top: 5.33%;
+  bottom: 92.06%;
+}
+
+.companies {
+  position: absolute;
+  display: block;
+  overflow: auto;
+  width: 1080px;
+  height: 745px;
+  left: 281px;
+  top: 147px;
+  background: #383E57;
+  -webkit-box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+}
+
+.companies::-webkit-scrollbar {
+  width: 15px;
+  height: 722px;
+  background: #3E4459;
+  border-radius: 6px;
+}
+
+.companies::-webkit-scrollbar-track {
+  background: #3E4459;
+  border-radius: 6px;
+}
+
+.companies::-webkit-scrollbar-thumb {
+  background: #23273A;
+  border-radius: 6px;
+  width: 11px;
+}
+
+.companies::-webkit-scrollbar-thumb::-webkit-resizer {
+  height: 246px;
+}
+
+.companies__table {
+  margin: 17px 10px;
+}
+
+.companies__table th {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 6px;
+}
+
+.companies__table__item {
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A1A6BE;
+  height: 50px;
+  border-left: none;
+  padding-left: 28px;
+  padding-right: 20px;
+}
+
+.companies__table__item:last-child {
+  border-right: none;
+}
+
+.companies__table .comp-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.companies__table .comp-name svg {
+  margin: 0 9px;
+}
+/*# sourceMappingURL=companies.css.map */

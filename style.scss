@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif; 
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+svg {
+    overflow: visible;
+}
+
+.wrapper{
+    max-width: 1460px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    background-color:  #4D5374;
+    height: 1082px;
+    width: 100%;
+    max-width: 1460px;
+    position: relative;
+     & .header{
+       
+        top: 0;
+        left: 0;
+           background: #1F2339;
+           width: 241px;
+            
+       }
+}
+
+
+
+#current__page{
+    background: radial-gradient(133.33% 2508.35% at -4.59% -10%, #32E6FF 0%, rgba(0, 255, 209, 0.81) 100%), #43E8FF;
+    border-radius: 10px;
+    & a{
+        color: #23273A;
+    }
+    & svg{
+        fill: #23273A;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "header.scss";
+@import "menu.scss";
+@import "main_content.scss";
+@import "filling.scss";
+@import "activity_styles.scss";
+@import "companies.scss";

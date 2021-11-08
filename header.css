@@ -1,0 +1,41 @@
+.header__lk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 31px 43px 89px 0px;
+}
+
+.header__lk .lk__list {
+  padding-left: 0.6rem;
+}
+
+.header__lk .lk__list .lk__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.header__lk .lk__list .lk__item__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding-left: 11px;
+  text-decoration: none;
+}
+
+.header__lk .lk__list .lk__item__link[aria-current] {
+  color: #43E8FF;
+}
+/*# sourceMappingURL=header.css.map */

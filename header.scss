@@ -1,0 +1,43 @@
+.header{
+  
+    &__lk{
+        display: flex;
+        flex-direction: column;
+        margin: 31px 43px 89px 0px;
+      
+        & .lk__list{
+            padding-left: 0.6rem;
+           & .lk__item{
+               display: flex;
+               align-items: center;
+                font-family: "Open Sans", sans-serif;
+                padding-top: 10%;
+                padding-left: 10%;
+                &__link{
+                    font-style: normal;
+                     font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                    padding-left: 11px;
+                    text-decoration: none;
+                }
+
+                &__link[aria-current]{
+                  
+                    color:  #43E8FF;
+                   
+                }
+
+                // &:nth-child(1){
+                //     padding-bottom: 25px;
+                // }
+                
+            }
+        }
+    }
+
+}
+
+
+

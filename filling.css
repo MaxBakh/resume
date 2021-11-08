@@ -1,0 +1,90 @@
+#tab {
+  border-collapse: collapse;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  display: table-row;
+  margin: 19px 0 15px 9px;
+  table-layout: fixed;
+}
+
+#tab #data {
+  padding: 0 32px 9px 10px;
+}
+
+#tab #data__staff {
+  border: 1px solid #151E41;
+  border-bottom: none;
+  border-left: none;
+  width: 121px;
+  height: 39px;
+  padding: 0 30px 0 10px;
+}
+
+#tab #data__staff:last-child {
+  border-right: none;
+}
+
+#tab #data__staff:last-child(-n+2) {
+  width: 33%;
+}
+
+#graffic {
+  position: absolute;
+  top: 38%;
+  left: 45%;
+  overflow: auto;
+}
+
+#add__tech {
+  background: none;
+  border: none;
+  color: #43E8FF;
+  color: #43E8FF;
+  width: 184px;
+}
+
+.star::after {
+  content: url("./images/star.svg");
+  margin-left: 15px;
+}
+
+#statistic__year__analytics {
+  background: url("./images/analit_png.png") no-repeat;
+  position: absolute;
+  right: 7%;
+  bottom: 0%;
+  background-position: inherit;
+}
+
+#statistic__year__analytics__table table, #statistic__year__analytics__table td {
+  border: 1px solid #000;
+}
+
+#statistic__year__analytics__table td {
+  width: 142px;
+  height: 155px;
+  border-top: none;
+}
+
+#statistic__year__analytics__table .table__footer {
+  height: 13px;
+  text-align: center;
+  border-bottom: none;
+}
+
+#statistic__year__analytics__table table {
+  border-collapse: collapse;
+  border-top: none;
+  position: absolute;
+}
+
+#statistic__year__analytics__table #thin {
+  width: 8px;
+  border-top: none;
+  border-left: none;
+}
+/*# sourceMappingURL=filling.css.map */
