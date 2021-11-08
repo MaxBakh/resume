@@ -1,0 +1,153 @@
+$mainColor: #18216D;
+$fontFamily: "Inter", sans-serif, serif;
+.collab{
+    font-family: $fontFamily;
+    color: $mainColor;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:49px 277px;
+    padding: 134px 0 48px;
+    &_heading{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 50px;
+    width: 30%;
+ 
+    }
+    &_achives{
+        display: flex;
+        gap: 128px;
+   
+        & h2{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 70px;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+        & span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+        }
+        ul{
+            list-style: none;
+            & li:nth-last-child(2){
+                margin: 10px 0 12px;
+            }
+        }
+    }
+
+ 
+}
+
+
+
+.companies{
+    display: flex;
+   justify-content: center;
+    gap: 79px;
+   & .company{
+    //    height: 35px;
+    //    width: 151px;
+    //    outline: 1px solid red;
+       
+       width: 151px;
+       height: 35px;
+       background-size: 151px 35px;
+   }
+
+
+
+   & #airbnb{
+    background: url("./images/airbnb.svg");
+   }
+   & #nubspot{
+    background: url("./images/Hubspot\ Logo.svg");
+   }
+   & #google{
+    background: url("./images/google.svg");
+   }
+   & #microsoft{
+    background: url("./images/Microsoft\ Logo.svg");
+   }
+   & #walmart{
+    background: url("./images/Walmart\ Logo.svg");
+   }
+   & #fedex{
+    background: url("./images/FedEx\ Logo.svg");
+   }
+
+   & #airbnb,
+    #nubspot,  #google,
+   #microsoft, #walmart, #fedex{ 
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+}    
+
+
+
+
+
+
+
+
+
+@media (max-width: 375px) {
+    .collab{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        &_heading{
+            width: 90%;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: start;
+        }
+        &_achives{
+            display: flex;
+            gap: 0;
+        }
+    }
+
+    .companies{
+
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+    margin-bottom: 51px;
+  
+        & .company{
+      
+               background-position: center;
+               background-repeat: no-repeat;
+               width: 69px;
+               height: 16px;
+               background-size: 69px 16px;
+              
+           }
+           & .company:nth-last-child(-n+2){
+               display: none;
+           }
+           & #airbnb,
+           #nubspot,  #google,
+          #microsoft, #walmart, #fedex{ 
+        
+           background-position: center;
+           background-size: contain;
+           background-repeat: no-repeat;
+    }    
+    
+}
+}
+
+
+

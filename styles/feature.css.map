@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,cAAM,CAAA;EACF,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "feature.scss"
+    ],
+    "names": [],
+    "file": "feature.css"
+}

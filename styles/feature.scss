@@ -1,0 +1,103 @@
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    &_text{
+        text-align: center;
+        font-family: $fontFamily;
+        color: $mainColor;
+        width: 542px;
+        margin-bottom: 48px;
+        & h2{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: -1px;
+            text-transform: capitalize;
+        }
+        & p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+    &_cards{
+        display: flex;
+        justify-content: center;
+        font-family: $fontFamily;
+        color: $mainColor;
+        gap: 80px;
+        & .card{
+            height: 267px;
+            width: 23%;
+            // outline: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            & span{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;  
+            }
+            & p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                opacity: 0.6;
+            }
+            & a{
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 16px;
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .features{
+        justify-content: flex-start;
+        &_text{
+           
+            // text-align: center;
+            font-family: $fontFamily;
+            color: $mainColor;
+            width: 335px;
+            & h2{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 24px;
+                letter-spacing: -1px;
+                text-transform: capitalize;
+            }
+            & p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                opacity: 0.5;
+                text-align: center;
+                letter-spacing: -0.02em;
+            }
+    }
+    &_cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 48px;
+        & .card{
+            width: 85%;
+        }
+
+    }
+}
+}

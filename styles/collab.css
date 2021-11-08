@@ -1,0 +1,154 @@
+.collab {
+  font-family: "Inter", sans-serif, serif;
+  color: #18216D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 49px 277px;
+  padding: 134px 0 48px;
+}
+
+.collab_heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 50px;
+  width: 30%;
+}
+
+.collab_achives {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 128px;
+}
+
+.collab_achives h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.collab_achives span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.collab_achives ul {
+  list-style: none;
+}
+
+.collab_achives ul li:nth-last-child(2) {
+  margin: 10px 0 12px;
+}
+
+.companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 79px;
+}
+
+.companies .company {
+  width: 151px;
+  height: 35px;
+  background-size: 151px 35px;
+}
+
+.companies #airbnb {
+  background: url("./images/airbnb.svg");
+}
+
+.companies #nubspot {
+  background: url("./images/Hubspot Logo.svg");
+}
+
+.companies #google {
+  background: url("./images/google.svg");
+}
+
+.companies #microsoft {
+  background: url("./images/Microsoft Logo.svg");
+}
+
+.companies #walmart {
+  background: url("./images/Walmart Logo.svg");
+}
+
+.companies #fedex {
+  background: url("./images/FedEx Logo.svg");
+}
+
+.companies #airbnb,
+.companies #nubspot, .companies #google,
+.companies #microsoft, .companies #walmart, .companies #fedex {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 375px) {
+  .collab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+  .collab_heading {
+    width: 90%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: start;
+  }
+  .collab_achives {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+  }
+  .companies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 36px;
+    margin-bottom: 51px;
+  }
+  .companies .company {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 69px;
+    height: 16px;
+    background-size: 69px 16px;
+  }
+  .companies .company:nth-last-child(-n+2) {
+    display: none;
+  }
+  .companies #airbnb,
+  .companies #nubspot, .companies #google,
+  .companies #microsoft, .companies #walmart, .companies #fedex {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+/*# sourceMappingURL=collab.css.map */

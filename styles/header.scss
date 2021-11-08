@@ -1,0 +1,108 @@
+// $mainColor: #18216D;
+
+
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:41px 10px 84px ;
+    & .blur{
+        position: absolute;
+        width: 766px;
+        height: 766px;
+        left: -149px;
+        top: -147px;
+        background: #FF523D;
+        opacity: 0.05;
+        filter: blur(150px);
+    }
+    & .nav_btn{
+        display: flex;
+    align-items: center;
+    gap: 430px;
+        & .navigation{
+            // padding: 0 430px 0 110px;
+            & ul{
+                list-style: none;
+                & li{
+                    display: inline;
+                    padding: 40px;
+                    & a{
+                        text-decoration: none;
+                        color: $mainColor;
+                        font-family: $fontFamily;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    
+        .auth{
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            & span{
+                & a{
+                    text-decoration: none;
+                    font-family: $fontFamily;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: $mainColor;
+                }
+            }
+            & .download{
+                width: 132px;
+                height: 52px;
+                background: $mainColor;
+                color: #fff;
+                font-family: $fontFamily;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;    
+                line-height: 20px;
+                border-radius: 6px;
+                border: none;
+                cursor: pointer;
+     
+            }
+        }
+        & .close{
+            display: none;
+        border: none;
+        background: #fff;
+        cursor: pointer;
+        }
+    }
+    
+    
+}
+
+
+
+@media (max-width: 375px) {
+    .header_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding:30px 10px 54px ;
+        gap: 232px;
+        & .nav_btn{
+        & .close{
+            display: flex;
+        }
+        & .navigation,
+        .auth,
+        .download{
+            // padding: 0 430px 0 110px;
+          display: none;
+        }
+    
+
+        }  
+    }
+}
