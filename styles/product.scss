@@ -1,0 +1,94 @@
+.product{
+    margin: 0 0 96px 0;
+    &_container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &_card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+
+ .product_card:not(:last-child){
+        /* outline: 1px solid black; */
+        width: 30%;
+        height: 260px;
+    }
+
+    .product_card:last-child{
+        width: 100%;
+        height: 180px;
+        /* outline: 1px solid rebeccapurple; */
+        background: url("img/acces.png");
+    }
+
+
+
+     .card_women{
+        background: url(img/women.png) no-repeat;
+    }
+
+    .card_men{
+        background: url(img/men.png) no-repeat;
+    }
+
+    .card_kids{
+        background: url(img/kids.png) no-repeat;
+    }
+
+
+    .prod_card_text{
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        position: absolute;
+        display: block;
+       text-align: center;
+       & h2{
+           & span{
+            color: #F16D7F;
+           }
+       }
+        
+    }
+
+    .prod_card_text:not(:last-chid){
+        margin: 0 auto;
+         
+      }
+  
+
+
+
+@media (max-width: 768px)and (min-width:376px) {
+    .product_card:not(:last-child){
+        /* outline: 1px solid black; */
+       background-size: contain;
+       width: 30%;
+       height: 167px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .product{
+       
+        &_container{
+            justify-content: center;
+        }
+
+    .product_card:not(:last-child){
+    width: 55%;
+    height: 248px;
+    background-size: contain;
+    }
+}
+}

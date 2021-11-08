@@ -1,0 +1,229 @@
+body{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr min-content;
+}
+
+.container{
+  /* outline: 1px solid red; */
+  max-width: 1160px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* max-width: 1160px;
+  padding: 0 10px; сделали для того, чтобы контент
+  "не прилипал" к стенкам мобильного телефона */
+
+
+.header{
+    background-color: black;
+    padding: 18px 0 19px 0;
+    position: relative;
+    &_left{
+      display: flex;
+      align-items: center;
+    }
+    &_right{
+      display: flex;
+      align-items: center;
+    }
+    &_container{
+      display: flex;
+      justify-content: space-between;
+  }
+  &_logo{
+    margin: 0 41px 0 0;
+}
+}
+
+
+
+    // .header_left,
+    // .header_right{
+    //     display: flex;
+    //     align-items: center;
+    // }
+
+    // .header_container{
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+
+    // .header_logo{
+    //     margin: 0 41px 0 0;
+    // }
+///////////////////////////////////////////////////
+    /* .header_nav a:not(:last-child) будут заданы
+    стили (в данном случае отступы) для всех
+    ссылок, кроме последней*/
+    .header_nav a{
+        text-decoration: none;
+    }
+    .header_nav a:not(:last-child){
+        margin: 0 33px 0 0;
+    }
+
+    .header_nav a svg{
+        padding: 3px;
+        box-sizing: border-box;
+        fill: #E8E8E8;
+        transition: transform 2s;
+        &:hover{
+            transform: scale(1.5);
+            fill: #F26376;
+        }
+    }
+    
+    .header_left svg{
+        fill: #E8E8E8;
+        transition: transform 2s;
+        &:hover{
+            transform: scale(1.5);
+            fill: #F26376;
+        }
+    }
+
+
+
+    
+      
+      
+      .open{
+        display: block;
+      }
+      
+      .close{
+        display: none;
+      }
+      
+    
+     
+
+      .list_item{
+        padding-bottom: 11px;
+      }
+      
+      .nav{
+        position: absolute;
+        min-height: 764px;
+        /* border: 1px solid #000; */
+        width: 232px;
+        background-color: #FFFFFF;
+        right: 0;
+        top: 79px;
+        &_close{
+            position:absolute;
+            top: 10px; 
+            right: 10px;
+             cursor: pointer;
+             fill: #6F6E6E;
+        }
+        &_link{
+            text-decoration: none;
+            color: black;
+            &:hover{
+             color: #F16D7F;
+            }
+          }
+          &_title{
+            padding-top: 34px;
+            padding-left: 33px;
+            color: #000000;
+          }
+          &_list{
+            list-style: none;
+          }
+          &_heding{
+            padding-left: 33px;
+            color: #F16D7F;
+          }
+      }
+
+
+
+
+
+
+
+
+// PROMO STYLES
+@import "styles/promo.scss";
+
+
+/*         PRODUCT                       */
+/* --------------------------------------------------------------------------------- */
+       
+@import "styles/product.scss";
+
+
+/*         items         */
+/* -------------------------------------------------- */
+@import "styles/items.scss";
+
+
+
+        /* FOOTER */
+
+@import "styles/footer.scss";
+ 
+
+
+
+
+/*__________________________________ STYLES CATALOG________________________________*/
+@import "styles/catalog.scss";
+
+
+/* ________________________________________________________________________ */
+  /*______________PAGE____3_______PRODUCT______________________________*/
+  @import "styles/page_3.scss";
+
+
+/* _______________________________________________ */
+
+
+
+
+
+
+
+
+
+
+/*______________________________PAGE________4___________________________*/
+/*_________________________________________________________________*/
+/*__________________________CART_______________________________________________*/
+@import "styles/cart.scss";
+
+// ___________PAGE 5  REGISTRATION____________
+@import "styles/regist.scss";
+
+// _____________________________________________
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+
+@media (max-width: 768px) and (min-width:376px){
+  .header_container{
+   padding: 0;
+   & .header_left{
+     padding-left: 32px;
+   }
+   & .header_right{
+     padding-right: 32px;
+   }
+}
+}
+
+
+@media (max-width: 375px) {
+  .header_nav a:not(:first-child){
+   display: none;
+}
+    
+}

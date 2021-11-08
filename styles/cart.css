@@ -1,0 +1,205 @@
+.carts_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 128px;
+  padding: 96px 0 128px 0;
+}
+
+.carts_container_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+}
+
+.carts_container_left .goods {
+  height: 306px;
+  min-width: 652px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-shadow: 15px 0px 20px 0px lightgrey;
+          box-shadow: 15px 0px 20px 0px lightgrey;
+}
+
+.carts_container_left .goods_img {
+  padding-right: 20px;
+}
+
+.carts_container_left .goods_text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* text-align: center; */
+  max-width: 390px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.carts_container_left .goods_text ul {
+  list-style: none;
+}
+
+.carts_container_left .goods_text h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 29px;
+  color: #222222;
+}
+
+.carts_container_left .goods_text p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.carts_container_left .goods_text span {
+  color: #F16D7F;
+}
+
+.carts_container_left .goods svg {
+  padding: 28px 22px 0 57px;
+}
+
+.carts_container_left .goods svg:hover {
+  cursor: pointer;
+}
+
+.carts_container_left .quanity {
+  height: 24px;
+  width: 43px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+.carts_container_left .quanity::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.carts_container_left .quanity:-ms-input-placeholder {
+  text-align: center;
+}
+
+.carts_container_left .quanity::-ms-input-placeholder {
+  text-align: center;
+}
+
+.carts_container_left .quanity::placeholder {
+  text-align: center;
+}
+
+.carts_container_left .cart_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 192px;
+}
+
+.carts_container_left .cart_btn button {
+  padding: 17px 32px;
+  background: white;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 1.3s;
+  transition: -webkit-transform 1.3s;
+  transition: transform 1.3s;
+  transition: transform 1.3s, -webkit-transform 1.3s;
+  border: 1px solid #A4A4A4;
+}
+
+.carts_container_left .cart_btn button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 10px 5px 5px lightgrey;
+          box-shadow: 10px 5px 5px lightgrey;
+}
+
+.ship_addres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 21px;
+  padding-bottom: 57px;
+}
+
+.ship_addres #address_form {
+  padding: 13px 125px 16px 17px;
+  border: 1px solid #A4A4A4;
+  width: -webkit-fill-available;
+}
+
+.ship_addres button {
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  padding: 10px 15px 12px;
+  cursor: pointer;
+}
+
+.ship_addres_count {
+  background: #F5F3F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 39px 44px 42px;
+  gap: 39px;
+}
+
+.ship_addres_count span {
+  padding-left: 15px;
+}
+
+.ship_addres_count .total_price {
+  color: #F16D7F;
+}
+
+.ship_addres_count button {
+  background: #F16D7F;
+  padding: 15px 43px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #F16D7F;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.ship_addres_count button:hover {
+  color: #F16D7F;
+  background: #FFFFFF;
+}
+
+.ship_addres_count_text {
+  font-size: 11px;
+  line-height: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=cart.css.map */

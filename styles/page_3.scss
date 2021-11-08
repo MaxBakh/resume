@@ -1,0 +1,142 @@
+.slider{
+    background-color:#F7F7F7;
+    margin: 0 0 65px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    position: relative;
+    & .btn{
+        background: rgba(42, 42, 42, 0.15);
+        position: absolute;
+        cursor: pointer;
+        border: none;
+        &.left{
+            left: 5px;
+        }
+        &.right{
+            right: 5px;
+        }
+    }
+    }
+
+    .arrow{
+       
+        padding: 12px 17px;
+    }
+
+    .prdpg{
+        padding: 128px 0 128px 0;
+    }
+
+
+
+    // ???????????????
+ .wcollect{
+        text-align: center;
+        background: #FFFFFF;
+        position: relative;
+        bottom: 130px;
+        border: 1px solid #EAEAEA;
+        padding: 65px;
+        width: auto;
+    
+      &_decr{
+            display: flex;
+            justify-content: center;
+    }
+    &_text{
+        color: #4D4D4D;
+        & h1{
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            padding: 12px 0 49px 0;
+        }
+        & p{
+            font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        }
+      }
+}
+
+    .add_cart{
+        display: flex;
+        align-items: center;
+        border: 1px solid #FF6A6A;
+        background: #FFFFFF;
+        gap: 23px;
+        padding: 0 56.5px 0 23.5px;
+        cursor: pointer;
+        transition: transform 1.5s;
+        & svg{
+            fill: #EF5B70;
+        }
+        & p{
+            font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        }
+        &:hover{
+            transform: scale(1.05);
+            background: #FF6A6A;
+           p{
+               color: #FFFFFF;
+           }
+           svg{
+               fill: #FFFFFF;
+           }
+        }
+    }
+
+
+  .container_p{
+        max-width: 524px;
+            margin: 0 auto;
+            padding: 32px 0;
+        }
+        
+   .line{
+             color:  #EAEAEA;
+            width: 65%;
+            margin-top: 65px;
+        }
+
+
+
+        .sort{
+            display: flex;
+            align-items: center;
+            gap: 23px;
+            padding: 65px 0 49px 0;
+            justify-content: center;
+            & p{
+                font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+            }
+        }
+
+
+      
+
+.test{
+    border: 2px solid #EF5B70;
+    width: 63px;
+    margin-top: 12px;
+}  
+
+
+
+
+.dfcolor{
+    color: #EF5B70;
+    &:last-child{
+        font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    
+    }
+}

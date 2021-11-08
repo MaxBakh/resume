@@ -1,0 +1,149 @@
+.regis_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 128px;
+  padding: 64px 0 96px 0;
+  min-height: 675px;
+}
+
+.regis_container .regis_left .txt {
+  border: 1px solid #A4A4A4;
+  padding: 13px 277px 16px 17px;
+  margin: 10px 0;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.regis_container .regis_left .txt:hover {
+  border: 3px solid #F16D7F;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.regis_container .regis_left .txt:active {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.regis_container .regis_left p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.regis_container .sub {
+  padding: 0 20px 0 29px;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.regis_container .sub svg {
+  fill: white;
+}
+
+.regis_container .sub:hover {
+  background-color: white;
+  color: #F16D7F;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.regis_container .sub:hover svg {
+  fill: #F16D7F;
+}
+
+.regis_container .gender {
+  padding: 31px 0 33px;
+}
+
+.regis_container .gender input {
+  cursor: pointer;
+}
+
+.regis_container .gender input:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  border: #F26376;
+}
+
+.regis_container .gender label {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.regis_container .gender label:hover {
+  border-bottom: 2px solid #F26376;
+}
+
+.regis_container .regis_right_text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.regis_container .regis_right_text h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.regis_container .regis_right_text p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.regis_container .regis_right_text .text_prime {
+  width: 89%;
+}
+
+.regis_container .regis_right_text .list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.regis_container .regis_right_text .list li {
+  margin: 16px;
+}
+
+.regis_container .regis_right_text .list li::before {
+  content: " \2713";
+  padding: 5px;
+}
+/*# sourceMappingURL=regist.css.map */

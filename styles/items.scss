@@ -1,0 +1,140 @@
+@mixin text_style {
+    // text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Lato;
+}
+
+
+.main_heading{
+    @include text_style;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.heading{
+    @include text_style;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+}
+
+
+.items{
+    width: 30%;
+    background: #F8F8F8;
+    position: relative;
+    transition: transform 1.3s;
+    &:hover {
+        transform: scale(1.05);
+      cursor: pointer;
+        & .add_tocart{
+            opacity: 1;
+        }
+        & .hover_img{
+            opacity: 1;
+        }
+    }
+    &_container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &_heading{
+        padding-bottom: 47px;
+    }
+    & img{
+        height: 420px;
+        width: 100%;
+    }
+    & .hover_img{
+        position: absolute;
+        left: 0;
+        opacity: 0;
+    }
+    & .add_tocart{
+        position: absolute;
+        top: 30%;
+         left: 30%;
+         border: 1px solid #FFFFFF;
+         color: #FFFFFF;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 11px;
+         background: none;
+        padding: 10px 15px 8px 13px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    &_text{
+        max-width: 377px;
+        width: 87%; 
+        padding: 24px 0 20px 18px;
+        & h1{
+            @include text_style;
+            font-size: 13px;
+            line-height: 16px;
+            color: #000000;
+        }
+        & p{
+            @include text_style;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5D5D5D;
+        }
+        & span{
+            color: #F16D7F;
+        }
+    }
+}
+
+
+  /*  button */
+
+  .going_on{
+    @include text_style;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #FFFFFF;
+    border: 1px solid #FF6A6A; 
+    margin: 63px 0 109px;
+    padding: 14px 38px;
+    // color: #FFFFFF;
+    color: #F26376;
+    cursor: pointer;
+    &:hover{
+        color:#FFFFFF;
+        background-color: #F26376;
+        a {
+            color:#FFFFFF;
+        }
+    }
+    & a {
+        text-decoration: none;
+        color: #F26376
+    }
+}
+
+
+
+@media (max-width: 768px) and (min-width:376px){
+    .items{
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .items{
+        width: 90%;
+        &img{
+            height: 418px;
+            
+        }
+    }
+}

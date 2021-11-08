@@ -1,0 +1,60 @@
+.promo{
+    background-color: #F1E4E6;
+    margin: 0 0 65px 0;
+    &_container{
+        min-height: 764px;
+        background: url("img/promo_foto.png") no-repeat;
+        background-position: -200px bottom;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &_text{
+        max-width: 377px;
+        width: 50%;
+        border-left: 12px solid #F16D7F;
+        padding: 0 0 0 16px;
+        & h1{
+            padding: 0;
+            margin: 0;
+            & span{
+                color: #F16D7F;
+                }
+        }
+    }
+ }
+
+
+ @media (max-width: 768px) and (min-width:376px){
+    .promo{
+        &_container{
+            min-height: 368px;
+            background-size: contain;
+            background-position: unset;
+           
+        }
+        &_text{
+            max-width: 283px;
+        width: 100%;
+        }
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .promo{
+        &_container{
+            min-height: 368px;
+            background: none;
+            justify-content: center;
+           
+        }
+        &_text{
+            max-width: 236px;
+        width: 100%;
+        }
+    }
+
+}
+    

@@ -1,0 +1,122 @@
+@mixin textStyle {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+.regis_container{
+    display: flex;
+    justify-content: space-around;
+    gap: 128px;
+    padding: 64px 0 96px 0;
+    min-height: 675px;
+    & .regis_left{
+        & .txt{
+            border: 1px solid #A4A4A4;
+            padding: 13px 277px 16px 17px;
+            margin: 10px 0;
+            transition: transform 2s;
+            &:hover{
+                border: 3px solid #F16D7F;
+                transform: scale(1.03);
+            }
+            &:active{
+                transform: scale(1.03);
+            }
+        }
+        & p{
+            @include textStyle;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+    & .sub{
+     padding: 0 20px 0 29px;
+    background: #F16D7F;
+    border: 1px solid #F16D7F;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition:  transform 2s;
+    & svg{
+        fill: white;
+    }
+    &:hover{
+        background-color: white;
+        color:#F16D7F;
+        transform: rotate(360deg);
+        &  svg{
+            fill: #F16D7F;
+        }
+}
+    }
+    
+    & .gender{
+        padding: 31px 0 33px;
+        & input{
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.03);
+                border: #F26376;
+            }
+        }
+        & label{
+            padding-right: 20px;
+            cursor: pointer;
+          ;
+            &:hover{
+               border-bottom: 2px solid #F26376;
+              
+            }
+        }
+    }
+    & .regis_right{
+        &_text{
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            & h2{
+                @include textStyle;
+            }
+            & p{
+                @include textStyle;
+            }
+            & .text_prime{
+                width: 89%;
+            }
+            & .list{
+                list-style:none ;
+                padding-left: 0;
+               
+                & li{
+                    margin: 16px;
+                 &::before{
+                    content: " \2713";
+                    padding: 5px;  
+                    
+                 }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 748px) {
+    
+}
+
+
+@media (min-width: 375px) {
+    
+}
+

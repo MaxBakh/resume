@@ -1,0 +1,240 @@
+@mixin posit {
+  position: absolute;  
+} 
+
+.staff{
+    background: #000000;
+    /* height: 341px; */
+    display: flex;
+    align-items: center;
+    padding: 103px 230px;
+    & h1{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #FBFBFB;
+    } 
+}
+
+
+.deliv{
+    align-items: center;
+    width: 30%;
+    &_container{
+        display: flex;
+         justify-content: space-between;
+         /* gap: 30px; */
+         text-align: center; 
+         flex-wrap: wrap;
+        
+     }
+
+     &_text{
+        max-width: 360px;
+        width: 80%;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        text-align: center;
+        color: #FBFBFB;
+        display: inline-flex;
+    }
+    & img{
+        /* padding: 0 156px 28px 158px; */
+        margin: 0 auto;
+    }
+& h1{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.96px;
+    color: #FBFBFB;
+}
+}
+
+// Style for form and picture
+
+.footer_foto{
+    background: url(img/footer.png)  no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 96px 0 127px 0;
+    & .container_ft_f{
+        display: flex;
+        & .right{
+           & img{
+                /* padding: 10px 117px 0 275px; */
+                display: block;
+                margin: 0 auto;
+            }
+           & p{
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                color: #222224;
+    
+            }
+        }
+}
+
+& .foot_text{
+    max-width: 557px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    /* or 40px */
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 32px;
+    color: #222224;
+    
+}
+}
+
+
+ /* FORM-POST BUTTON & EMAIL */
+
+ .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .form_email{
+        border: none;
+        padding: 20px;
+        border-radius: 20px 0 0 20px;
+        background: #E1E1E1;
+        &:focus{
+            outline: none;
+        }
+      }
+      & .form_btn{
+        border: none;
+        padding: 20px;
+        border-radius: 0 20px 20px 0;
+        background: #F16D7F;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            cursor: pointer;
+            opacity: 0.7;
+           }
+      }
+  }
+
+
+//   COPYRIGHTS
+
+.footer_end{ 
+    background: #000000;
+    height: 69px;
+    padding: 30px 235px 30px;
+    & p{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+    &   .copyright{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .socials{
+            & svg{
+                cursor: pointer;
+                fill: #ffffff;
+                transition: transform 2s;
+                &:hover{
+                    fill: #F16D7F;
+                    transform: scale(2);
+                    position: relative;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) and (min-width:376px){
+    .deliv{
+        width: 100%;
+        &_container{
+            gap: 48px;
+        }  
+    }
+    .footer_foto{
+        & .container_ft_f{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 48px;
+        }
+    }
+
+    .footer_end{
+        position: relative;
+        display: flex;
+        align-items: center;
+        & .copyright_text{
+            @include posit;
+            left: 32px;
+        }
+        & .socials{
+            @include posit;
+            right: 32px;
+        }
+    }
+    
+}
+
+
+
+
+@media (max-width: 375px) {
+
+    .deliv{
+        width: 100%;
+        &_container{
+            gap: 46px;
+        }  
+    }
+
+    .staff{
+       padding: 48px 0 81px 0;
+    }
+    .footer_foto{
+        & .container_ft_f{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 59px;
+        }
+    }
+    .copyright{
+        flex-direction: column-reverse;
+        gap: 20px;
+        &_text{
+            width: 125%;
+        }
+        .socials{
+            display: flex;
+           gap: 15px;
+        }
+    }
+            
+}
+
+
+
