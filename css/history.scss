@@ -1,0 +1,54 @@
+
+
+.text{
+    & h2{
+        text-align: center;
+        color: $color;
+    }
+    & .resume{
+        border: 1px solid lightgrey;
+        padding: 10px;
+        color: $color;
+    }
+}
+
+
+
+
+
+.before{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ &_text{
+     text-align: center;
+     width: 100%;
+     color: $color;
+ }
+ &_img{
+     width: 30%;
+     & img{
+         width: 99%;
+     }
+ }
+}
+
+
+.after{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px 0 32px;
+
+    &_text{
+        text-align: center;
+        width: 100%;
+        color: $color;
+    }
+    &_img{
+        width: 30%;
+        & img{
+            width: 100%;
+        }
+    }
+   }

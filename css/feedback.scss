@@ -1,0 +1,54 @@
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    & textarea{
+        resize: none;
+        width: 80%;
+        align-self: center;
+        height: 150px;
+        border: 1px solid cornflowerblue;
+        border-radius: 10px;
+    }
+    & .form{
+        display: flex;
+        height: 80vh;
+        width: 500px;
+    flex-direction: column;
+    gap: 32px;
+    // outline: 1px solid black;
+    & h2{
+        text-align: center;
+        color: cornflowerblue;
+    }
+    & label{
+        text-align: center;
+        color: cornflowerblue;
+    }
+    & input{
+        padding: 12px 15px;
+        width: 80%;
+        align-self: center;
+        border: 1px solid cornflowerblue;
+        border-radius: 10px;
+    }
+    & .push{
+        align-self: center;
+        width: 120px;
+        padding: 10px 20px;
+        cursor: pointer;
+        background:  whitesmoke;
+        color: cornflowerblue;
+        border: 1px solid cornflowerblue;
+        transition: 1.5s;
+        &:hover{
+            cursor: pointer;
+            background: cornflowerblue;
+            color: black;
+            border: 1px solid cornflowerblue;
+            transform: scale(1.2);
+        }
+    }
+   }
+}

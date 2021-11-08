@@ -1,0 +1,79 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.wrapper textarea {
+  resize: none;
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 150px;
+  border: 1px solid cornflowerblue;
+  border-radius: 10px;
+}
+
+.wrapper .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.wrapper .form h2 {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.wrapper .form label {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.wrapper .form input {
+  padding: 12px 15px;
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 1px solid cornflowerblue;
+  border-radius: 10px;
+}
+
+.wrapper .form .push {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 120px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: whitesmoke;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.wrapper .form .push:hover {
+  cursor: pointer;
+  background: cornflowerblue;
+  color: black;
+  border: 1px solid cornflowerblue;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=feedback.css.map */

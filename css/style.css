@@ -1,0 +1,309 @@
+@font-face {
+  font-family: "Huntsman";
+  src: url("fonts/Huntsman");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr min-content;
+      grid-template-rows: auto 1fr -webkit-min-content;
+      grid-template-rows: auto 1fr min-content;
+  background: whitesmoke;
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  height: 64px;
+  background: #fff;
+  border-bottom: 1px solid lightgray;
+}
+
+.header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 28px;
+}
+
+.logo a img {
+  width: 100px;
+  height: 62px;
+  padding-right: 32px;
+}
+
+#slogan span {
+  font-family: "Huntsman", sans-serif;
+  font-size: 22px;
+  line-height: 50px;
+}
+
+/* for menu   */
+.nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 23px;
+}
+
+.nav_menu #menu .btn {
+  padding: 5px;
+  background: whitesmoke;
+  border: none;
+  padding: 10px;
+  letter-spacing: 5px;
+  font-size: 20px;
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+.nav_menu #menu .btn:hover {
+  border-bottom: 1px solid cornflowerblue;
+}
+
+.nav_menu #menuHrefs a {
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.nav_menu #menuHrefs a:hover {
+  color: #8b9ff5;
+  border-bottom: 2px solid cornflowerblue;
+  text-decoration: none;
+}
+
+.nav_menu .nav {
+  position: absolute;
+  background: #fff;
+  left: 775px;
+  width: 514px;
+  border: 1px solid  lightgray;
+}
+
+.nav_menu .nav ul {
+  padding-top: 5px;
+  list-style: none;
+}
+
+.nav_menu .nav ul li {
+  display: inline;
+  padding-left: 8px;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.banner {
+  height: 100vh;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8b9ff5;
+  text-decoration: none;
+}
+
+.mar {
+  font-size: 17px;
+  background-color: #000;
+  color: white;
+  font-family: "Huntsman", sans-serif;
+}
+
+/*footer*/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .columRight {
+  width: 100%;
+  color: white;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text h2 {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.text .resume {
+  border: 1px solid lightgrey;
+  padding: 10px;
+  color: cornflowerblue;
+}
+
+.before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.before_text {
+  text-align: center;
+  width: 100%;
+  color: cornflowerblue;
+}
+
+.before_img {
+  width: 30%;
+}
+
+.before_img img {
+  width: 99%;
+}
+
+.after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 0 32px;
+}
+
+.after_text {
+  text-align: center;
+  width: 100%;
+  color: cornflowerblue;
+}
+
+.after_img {
+  width: 30%;
+}
+
+.after_img img {
+  width: 100%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.wrapper textarea {
+  resize: none;
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 150px;
+  border: 1px solid cornflowerblue;
+  border-radius: 10px;
+}
+
+.wrapper .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.wrapper .form h2 {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.wrapper .form label {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.wrapper .form input {
+  padding: 12px 15px;
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 1px solid cornflowerblue;
+  border-radius: 10px;
+}
+
+.wrapper .form .push {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 120px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: whitesmoke;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.wrapper .form .push:hover {
+  cursor: pointer;
+  background: cornflowerblue;
+  color: black;
+  border: 1px solid cornflowerblue;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=style.css.map */
