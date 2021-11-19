@@ -16,3 +16,5 @@ https://github.com/MaxBakh/resume/pull/5
 https://github.com/MaxBakh/resume/pull/6
 
 https://github.com/MaxBakh/resume/pull/7
+
+https://github.com/MaxBakh/resume/pull/8
