@@ -1,6 +1,6 @@
 # resume
 
- представлен код с сайтом
+ представлен код с сайтами
 
 https://github.com/MaxBakh/amoCRM/pull/1
 (result: https://maxbakh.github.io/amoCRM/ )
