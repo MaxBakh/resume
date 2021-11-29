@@ -13,4 +13,5 @@ https://github.com/MaxBakh/resume/pull/6
 https://github.com/MaxBakh/Blackwall/pull/1 
 (result: https://maxbakh.github.io/Blackwall/ )
 
-
+https://github.com/MaxBakh/Some_practice/pull/1
+(result: https://maxbakh.github.io/Some_practice/)
