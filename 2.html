@@ -1,0 +1,51 @@
+<script>
+
+
+    // 2. Нужно реализовать функционал подсчета стоимости корзины в зависимости от находящихся в ней товаров.
+    // 3. Товары в корзине хранятся в массиве. Задачи:
+    // a) Организовать такой массив для хранения товаров в корзине;
+    // b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
+
+    function countBasketPrice(k) {
+
+        var goods = [
+            {
+                title: "Товар 1",
+                price: 250,
+                count: count1 = +prompt("введите количство товара 1")
+            },
+            {
+                title: "Товар 2",
+                price: 100,
+                count: count2 = +prompt("введите количство товара 2")
+            }
+        ]
+
+        function total(count1) {
+
+            if (count1 => 1) {
+                goods.push(count1);
+                document.write("кол- во " + count);
+            }
+        }
+
+
+        for (i = 0; i < goods.length; i++) {
+
+            document.write(goods[i].title + " " + "кол-во " + goods[i].count + " " + "стоимость " + goods[i].price + "<br>");
+        }
+
+        var k;
+        for (var item of goods) {
+
+            k += (item.price * item.count);
+        }
+        document.write("общая  сумма  " + k);
+    }
+
+    countBasketPrice(0);
+
+
+
+
+</script>
